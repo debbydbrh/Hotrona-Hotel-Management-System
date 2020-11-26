@@ -1,0 +1,13 @@
+Petunjuk Instalasi dan Penggunaan :
+1. Pastikan XAMPP telah terinstall di komputer
+2. Aktifkan Apache dan MySQL dengan menggunakan XAMPP
+3. Extract file zip (source code) ke dalam direktori htdocs pada XAMPP, misal htdocs/hotrona_hotel
+4. Melalui terminal, cd ke direktori hotrona_hotel
+5. Pada terminal, ketikkan perintah composer install. Untuk melakukan penginstallan, dibutuhkan akses internet
+6. Buat database baru pada mysql (via sqlyog / phpmyadmin)
+7. Duplikat file .env.example lalu rename menjadi .env
+8. Kembali ke terminal, kemudian ketikkan "php artisan key:generate"
+9. Edit DB_DATABASE, DB_USERNAME, DB_PASSWORD yang terdapat pada file .env
+10. Jalankan perintah "php artisan migrate". Cek di sqlyog / phpmyadmin seharusnya tabel sudah muncul
+11. Kemudian jalankan perintah "php artisan serve". Jika berhasil akan muncul pesan berikut Laravel development server started: <http://127.0.0.1:8000>
+12. Ketikkan URL http://127.0.0.1:8000/login untuk dapat masuk ke sistem
